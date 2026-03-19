@@ -749,5 +749,17 @@ a:focus {
   }
 }
 
+.audio-demo-list {
+  margin-top: 2rem;
+}
 
+.audio-demo-item {
+  margin-bottom: 1.5rem;
+}
+
+.audio-player {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+}
 
