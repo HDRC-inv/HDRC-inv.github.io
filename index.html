@@ -301,73 +301,71 @@
 <!-- End image carousel -->
 
 <!-- Audio Hearing Examples -->
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Audio Hearing Examples</h2>
-
-    <div class="content">
-
-      <div class="box">
-        <p><b>Example 1.</b> Original audio</p>
-        <audio controls preload="none">
-          <source src="static/audios/original.wav" type="audio/wav">
-          Original audio.
-        </audio>
-      </div>
-
-      <div class="box">
-        <p><b>Example 2.</b> Compressed audio</p>
-        <audio controls preload="none">
-          <source src="static/audios/compressed.wav" type="audio/wav">
-          Compressed audio.
-        </audio>
-      </div>
-
-      <div class="box">
-        <p><b>Example 3.</b> Expanded audio</p>
-        <audio controls preload="none">
-          <source src="static/audios/expanded.wav" type="audio/wav">
-          Expanded audio.
-        </audio>
-      </div>
-
-    </div>
-  </div>
-</section> -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Audio Examples</h2>
+    <h2 class="title is-3 has-text-centered">Audio Hearing Examples</h2>
 
     <div class="table-container">
       <table class="table is-fullwidth is-striped is-hoverable">
         <thead>
           <tr>
             <th>Sample</th>
-            <th>Original</th>
-            <th>Processed</th>
-            <th>Inverted</th>
+            <th>Audio</th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
-            <td>Audio Example 1</td>
+            <td>Original</td>
             <td>
-              <audio controls preload="none">
+              <audio controls preload="none" style="width: 100%; max-width: 400px;">
                 <source src="static/audios/original.wav" type="audio/wav">
+                Your browser does not support the audio element.
               </audio>
             </td>
+          </tr>
+
+          <tr>
+            <td>Compressed</td>
             <td>
-              <audio controls preload="none">
+              <audio controls preload="none" style="width: 100%; max-width: 400px;">
                 <source src="static/audios/compressed.wav" type="audio/wav">
+                Your browser does not support the audio element.
               </audio>
             </td>
+          </tr>
+
+          <tr>
+            <td>Expanded</td>
             <td>
-              <audio controls preload="none">
+              <audio controls preload="none" style="width: 100%; max-width: 400px;">
                 <source src="static/audios/expanded.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>Model-based decompressed</b></td>
+            <td>
+              <audio controls preload="none" style="width: 100%; max-width: 400px;">
+                <source src="static/audios/decompressed_oracle.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>Model-based dexpanded</b></td>
+            <td>
+              <audio controls preload="none" style="width: 100%; max-width: 400px;">
+                <source src="static/audios/deexpanded.wav" type="audio/wav">
+                Your browser does not support the audio element.
               </audio>
             </td>
           </tr>
         </tbody>
+
       </table>
     </div>
   </div>
