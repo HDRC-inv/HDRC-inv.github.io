@@ -763,3 +763,33 @@ a:focus {
   display: block;
 }
 
+.audio-table {
+  table-layout: fixed;
+}
+
+/* 第一列（名称） */
+.audio-table th:nth-child(1),
+.audio-table td:nth-child(1) {
+  width: 30%;
+  word-break: break-word;   /* 允许长文本换行 */
+}
+
+/* 第二列（音频） */
+.audio-table th:nth-child(2),
+.audio-table td:nth-child(2) {
+  width: 30%;
+}
+
+/* 后面4列（loss指标） */
+.audio-table th:nth-child(n+3),
+.audio-table td:nth-child(n+3) {
+  width: 10%;
+  text-align: center;
+}
+
+/* 音频播放器优化 */
+.audio-table audio {
+  width: 100%;
+  max-width: 220px;
+}
+
