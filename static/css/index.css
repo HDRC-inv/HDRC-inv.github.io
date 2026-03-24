@@ -778,11 +778,13 @@ a:focus {
   width: 18%;
   word-break: break-word;
   white-space: normal;
+  text-align: left;
 }
 
 .audio-table th:nth-child(2),
 .audio-table td:nth-child(2) {
   width: 30%;
+  text-align: center;
 }
 
 .audio-table th:nth-child(3),
@@ -802,15 +804,4 @@ a:focus {
   width: 90%;
   min-width: 220px;
   max-width: 320px;
-}
-
-.audio-table th,
-.audio-table td {
-  border-right: 1px solid #ddd;
-}
-
-/* 最后一列不要竖线（更美观） */
-.audio-table th:last-child,
-.audio-table td:last-child {
-  border-right: none;
 }
