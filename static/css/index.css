@@ -764,7 +764,7 @@ a:focus {
 }
 
 .audio-table {
-  width: 100%;
+  width: 120%;
   table-layout: fixed;
 }
 
@@ -775,14 +775,14 @@ a:focus {
 
 .audio-table th:nth-child(1),
 .audio-table td:nth-child(1) {
-  width: 22%;
+  width: 18%;
   word-break: break-word;
   white-space: normal;
 }
 
 .audio-table th:nth-child(2),
 .audio-table td:nth-child(2) {
-  width: 28%;
+  width: 30%;
 }
 
 .audio-table th:nth-child(3),
@@ -793,13 +793,13 @@ a:focus {
 .audio-table td:nth-child(5),
 .audio-table th:nth-child(6),
 .audio-table td:nth-child(6) {
-  width: 12.5%;
+  width: 18%;
   text-align: center;
 }
 
 .audio-table audio {
   display: block;
-  width: 100%;
+  width: 90%;
   min-width: 220px;
   max-width: 320px;
 }
