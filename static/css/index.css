@@ -764,32 +764,43 @@ a:focus {
 }
 
 .audio-table {
+  width: 100%;
   table-layout: fixed;
 }
 
-/* 第一列（名称） */
+.audio-table th,
+.audio-table td {
+  vertical-align: middle;
+}
+
 .audio-table th:nth-child(1),
 .audio-table td:nth-child(1) {
-  width: 30%;
-  word-break: break-word;   /* 允许长文本换行 */
+  width: 22%;
+  word-break: break-word;
+  white-space: normal;
 }
 
-/* 第二列（音频） */
 .audio-table th:nth-child(2),
 .audio-table td:nth-child(2) {
-  width: 30%;
+  width: 28%;
 }
 
-/* 后面4列（loss指标） */
-.audio-table th:nth-child(n+3),
-.audio-table td:nth-child(n+3) {
-  width: 10%;
+.audio-table th:nth-child(3),
+.audio-table td:nth-child(3),
+.audio-table th:nth-child(4),
+.audio-table td:nth-child(4),
+.audio-table th:nth-child(5),
+.audio-table td:nth-child(5),
+.audio-table th:nth-child(6),
+.audio-table td:nth-child(6) {
+  width: 12.5%;
   text-align: center;
 }
 
-/* 音频播放器优化 */
 .audio-table audio {
+  display: block;
   width: 100%;
-  max-width: 220px;
+  min-width: 220px;
+  max-width: 320px;
 }
 
