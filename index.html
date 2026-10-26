@@ -5,45 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
   <meta name="title" content="Hybrid Model-Driven Inversion of Audio Dynamic Range Compression and Expansion - Haoran Sun, Dominique Fourer, Hichem Maaref">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content=" Dynamic Range Control (DRC) is a widely used audio effect that adjusts signal dynamics for applications in music production, broadcasting, and speech processing. Inverting DRC is of broad importance in restoring the original dynamics, enabling remixing, and enhancing the overall audio quality. Existing DRC inversion methods either overlook key parameters or rely on precise parameter values, which can be challenging to estimate accurately.  To address this limitation, we make two main contributions. First, building on a widely used model-based compression inversion framework, we derive and validate an analytical inversion method for dynamic range expansion, enabling a unified treatment of both compression and expansion effects. Second, we propose a hybrid parameter estimation framework that combines classification and regression strategies: classification is used to identify DRC profiles when strong priors are available, while regression enables parameter estimation for unconstrained DRC configurations. The estimated parameters are used for model-based signal recovery from its compressed or expanded version. Experimental evaluations across various music and speech datasets confirm the effectiveness and robustness of our approach, outperforming several state-of-the-art end-to-end deep learning techniques. ">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="description" content="A hybrid framework for blind inversion of audio dynamic range compression and expansion using learned parameter estimation and model-based reconstruction.">
   <meta name="keywords" content="Audio Effect Inversion, Dynamic Range Control (DRC), Audio Signal Restoration, Audio Quality.">
-  <!-- TODO: List all authors -->
   <meta name="author" content="Haoran Sun, Dominique Fourer, Hichem Maaref">
   <!-- <meta name="robots" content="index, follow"> -->
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="IBISC, Universite d'Evry/Paris Saclay">
-  <!-- TODO: Same as paper title above -->
   <meta property="og:title" content="Hybrid Model-Driven Inversion of Audio Dynamic Range Compression and Expansion">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content=" Dynamic Range Control (DRC) is a widely used audio effect that adjusts signal dynamics for applications in music production, broadcasting, and speech processing. Inverting DRC is of broad importance in restoring the original dynamics, enabling remixing, and enhancing the overall audio quality. Existing DRC inversion methods either overlook key parameters or rely on precise parameter values, which can be challenging to estimate accurately.  To address this limitation, we make two main contributions. First, building on a widely used model-based compression inversion framework, we derive and validate an analytical inversion method for dynamic range expansion, enabling a unified treatment of both compression and expansion effects. Second, we propose a hybrid parameter estimation framework that combines classification and regression strategies: classification is used to identify DRC profiles when strong priors are available, while regression enables parameter estimation for unconstrained DRC configurations. The estimated parameters are used for model-based signal recovery from its compressed or expanded version. Experimental evaluations across various music and speech datasets confirm the effectiveness and robustness of our approach, outperforming several state-of-the-art end-to-end deep learning techniques. ">
-  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:description" content="A hybrid framework for blind inversion of audio dynamic range compression and expansion using learned parameter estimation and model-based reconstruction.">
   <meta property="og:url" content="https://HDRC-inv.github.io">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
   <meta property="og:image" content="https://HDRC-inv.github.io/static/images/waveform.png">
   <meta property="og:image:width" content="225">
   <meta property="og:image:height" content="225">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:alt" content="Hybrid Model-Driven Inversion of Audio Dynamic Range Compression and Expansion">
+  <meta property="article:author" content="Haoran Sun">
+  <meta property="article:author" content="Dominique Fourer">
+  <meta property="article:author" content="Hichem Maaref">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="Dynamic Range Control">
+  <meta property="article:tag" content="Audio Effect Inversion">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <meta name="citation_title" content="Hybrid Model-Driven Inversion of Audio Dynamic Range Compression and Expansion">
+  <meta name="citation_author" content="Sun, Haoran">
+  <meta name="citation_author" content="Fourer, Dominique">
+  <meta name="citation_author" content="Maaref, Hichem">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_journal_title" content="IEEE/ACM Transactions on Audio, Speech, and Language Processing">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -59,7 +51,6 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <!-- TODO: Replace with your paper title and authors -->
   <title>Hybrid Model-Driven Inversion of Audio Dynamic Range Compression and Expansion - Haoran Sun, Dominique Fourer, Hichem Maaref</title>
   
   <!-- Favicon and App Icons -->
@@ -85,7 +76,7 @@
   </noscript>
   
   <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -101,50 +92,52 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "Hybrid Model-Driven Inversion of Audio Dynamic Range Compression and Expansion",
+    "description": "A hybrid framework for blind inversion of audio dynamic range compression and expansion using learned parameter estimation and model-based reconstruction.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Haoran Sun",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "IBISC, Université d'Évry Paris-Saclay"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Dominique Fourer",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "IBISC, Université d'Évry Paris-Saclay"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Hichem Maaref",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "IBISC, Université d'Évry Paris-Saclay"
         }
       }
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://hdrc-inv.github.io/",
+    "image": "https://hdrc-inv.github.io/static/images/waveform.png",
+    "keywords": ["audio effect inversion", "dynamic range control", "audio signal restoration", "audio quality"],
+    "abstract": "Dynamic Range Control is widely used in music production, broadcasting, and speech processing. This work extends model-based compression inversion to dynamic range expansion and combines profile classification or continuous parameter regression with model-based signal reconstruction.",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://hdrc-inv.github.io/"
     },
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "Audio effect inversion"
       },
       {
         "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "name": "Dynamic range control"
       }
     ]
   }
@@ -155,12 +148,11 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "name": "IBISC, Université d'Évry Paris-Saclay",
+    "url": "https://www.ibisc.univ-evry.fr/",
     "logo": "https://HDRC-inv.github.io/static/images/waveform.png",
     "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
+      "https://github.com/SunHaoRanCN/DRC_Inversion"
     ]
   }
   </script>
@@ -169,79 +161,57 @@
 
 
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Hybrid Model-Driven Inversion of Audio Dynamic Range Compression and Expansion</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://sunhaorancn.github.io/" target="_blank">Haoran Sun</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://fourer.fr/" target="_blank">Dominique Fourer</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=zdWsYsIAAAAJ&hl=fr" target="_blank">Hichem Maaref</a><sup>3</sup>
-              </span>
-            </div>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">Hybrid Model-Driven Inversion of Audio Dynamic Range Compression and Expansion</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://sunhaorancn.github.io/" target="_blank" rel="noopener noreferrer">Haoran Sun</a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://fourer.fr/" target="_blank" rel="noopener noreferrer">Dominique Fourer</a>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=zdWsYsIAAAAJ&amp;hl=fr" target="_blank" rel="noopener noreferrer">Hichem Maaref</a>
+                </span>
+              </div>
 
-            <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">IBISC, Universite d'Évry/Paris Saclay</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
-            
-            <div class="is-size-6 publication-authors" style="margin-top: 0.5rem;">
-              <div> <sup>1</sup> haoran.sun@univ-evry.fr </div>
-              <div> <sup>2</sup> dominique.fourer@univ-evry.fr </div>
-              <div> <sup>3</sup> hichem.maaref@univ-evry.fr </div>
-            </div>
-            
-                  <!-- <div class="column has-text-centered">
-                    <div class="publication-links"> -->
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <!-- <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span> -->
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">IBISC (EA4526), Université d'Évry Paris-Saclay</span>
+              </div>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
+              <div class="is-size-6 publication-authors" style="margin-top: 0.25rem;">
+                Submitted to IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2026
+              </div>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/SunHaoRanCN/DRC_Inversion" target="_blank"
+              <div class="is-size-6 publication-authors" style="margin-top: 0.5rem;">
+                firstname.lastname@univ-evry.fr
+              </div>
+
+              <div class="publication-links" style="margin-top: 1.25rem;">
+                <span class="link-block">
+                  <a href="https://pypi.org/project/drcinv/" target="_blank" rel="noopener noreferrer"
                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
+                    <span class="icon"><i class="fab fa-python"></i></span>
+                    <span>Python Library</span>
                   </a>
                 </span>
+                <span class="link-block">
+                  <a href="https://github.com/SunHaoRanCN/DRC_Inversion" target="_blank" rel="noopener noreferrer"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Paper Code</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 <!-- Paper abstract -->
@@ -251,9 +221,9 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
           <p>
-            Dynamic Range Control (DRC) is a widely used audio effect that adjusts signal dynamics for applications in music production, broadcasting, and speech processing. Inverting DRC is of broad importance in restoring the original dynamics, enabling remixing, and enhancing the overall audio quality. Existing DRC inversion methods either overlook key parameters or rely on precise parameter values, which can be challenging to estimate accurately.  To address this limitation, we make two main contributions. First, building on a widely used model-based compression inversion framework, we derive and validate an analytical inversion method for dynamic range expansion, enabling a unified treatment of both compression and expansion effects. Second, we propose a hybrid parameter estimation framework that combines classification and regression strategies: classification is used to identify DRC profiles when strong priors are available, while regression enables parameter estimation for unconstrained DRC configurations. The estimated parameters are used for model-based signal recovery from its compressed or expanded version. Experimental evaluations across various music and speech datasets confirm the effectiveness and robustness of our approach, outperforming several state-of-the-art end-to-end deep learning techniques.
+            Dynamic Range Control (DRC) is a widely used audio effect that adjusts signal dynamics for applications in music production, broadcasting, and speech processing. Inverting DRC is of broad importance in restoring the original dynamics, enabling remixing, and enhancing the overall audio quality. Existing DRC inversion methods either overlook key parameters or rely on precise parameter values, which can be challenging to estimate accurately. To address this limitation, we make two main contributions. First, building on a widely used model-based compression inversion framework, we derive and validate an analytical inversion method for dynamic range expansion, enabling a unified treatment of both compression and expansion effects. Second, we propose a hybrid parameter estimation framework that combines classification and regression strategies: classification identifies a profile from a predefined library, while regression estimates a fixed DRC parameter vector within the parameter domain considered during training. The estimated parameters are used for model-based signal recovery from its compressed or expanded version. Experiments on music and speech datasets show that the proposed methods outperform the evaluated neural baselines under the tested conditions.
+          </p>
         </div>
       </div>
     </div>
@@ -269,13 +239,21 @@
     <h2 class="title is-3 has-text-centered">Proposed Method</h2>
 
     <div class="content">
+      <p>
+        The framework first estimates the DRC parameters and then applies the
+        corresponding analytical inverse. The DRC mode and estimation pathway
+        are selected before inference: AST identifies a profile from a predefined
+        library, while MEE estimates a continuous six-parameter vector within the
+        parameter domain considered during training.
+      </p>
 
       <!-- Figure 1 -->
       <figure class="image box">
         <img src="static/images/task_chain_3.png" alt="Proposed hybrid end-to-end DRC inversion framework" loading="lazy">
       </figure>
       <p class="has-text-centered is-size-7">
-        <b>Figure 1.</b> Proposed hybrid end-to-end DRC inversion framework combining classification and regression pathways.
+        <strong>Proposed hybrid DRC inversion framework.</strong> The user selects
+        the DRC mode and the parameter-estimation pathway before inference.
       </p>
 
       <!-- Figure 2 -->
@@ -283,7 +261,7 @@
         <img src="static/images/DRC_chain.png" alt="DRC task chain" loading="lazy">
       </figure>
       <p class="has-text-centered is-size-7">
-        <b>Figure 2.</b> DRC task chain.
+        <strong>Feedforward DRC model</strong> shared by compression and expansion.
       </p>
     </div>
 
@@ -294,23 +272,28 @@
 <!-- DRC profile tables -->
 <section class="section">
   <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">DRC Profiles</h2>
 
-    <!-- Section Title -->
-    <h2 class="title is-3 has-text-centered">
-      DRC Profiles
-    </h2>
-
-    <!-- table 1 -->
-    <h3 class="title is-5">Dataset Parameter Settings</h3>
+    <div class="content">
+      <p>
+        We construct two dataset families from four corpora: MedleyDB, MUSDB18-HQ,
+        DAFX, and LibriSpeech. The 6-profile datasets contain five predefined DRC
+        profiles plus the neutral identity case. The 31-profile datasets contain
+        30 sampled profiles plus the neutral identity case. Compressors and
+        expanders share the same parameters except for the threshold
+        <i>L</i>. All profiles use an RMS detector (<i>p</i> = 2).
+      </p>
+    </div>
 
     <div class="table-container">
       <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
+        <caption class="is-sr-only">DRC profiles used to construct the 6-profile and 31-profile datasets</caption>
         <thead>
           <tr>
             <th rowspan="2">Parameter</th>
             <th rowspan="2">Description</th>
-            <th colspan="5">Small dataset (6 classes)</th>
-            <th rowspan="2">Large dataset (31 classes)</th>
+            <th colspan="5">6-profile datasets</th>
+            <th rowspan="2">31-profile range</th>
           </tr>
           <tr>
             <th>A</th>
@@ -347,21 +330,21 @@
             <td>τ<sub>v</sub><sup>att</sup> (ms)</td>
             <td>Envelope attack</td>
             <td colspan="5">5</td>
-            <td>[5, 130]</td>
+            <td>[5, 500]</td>
           </tr>
 
           <tr>
             <td>τ<sub>v</sub><sup>rel</sup> (ms)</td>
             <td>Envelope release</td>
             <td colspan="5">5</td>
-            <td>[5, 130]</td>
+            <td>[25, 2000]</td>
           </tr>
 
           <tr>
             <td>τ<sub>g</sub><sup>att</sup> (ms)</td>
             <td>Gain attack</td>
-            <td>13.0</td><td>11.0</td><td>5.8</td><td>9.0</td><td>13.1</td>
-            <td>[10, 500]</td>
+            <td>13.0</td><td>11.0</td><td>5.8</td><td>9.0</td><td>3.1</td>
+            <td>[5, 500]</td>
           </tr>
 
           <tr>
@@ -380,65 +363,93 @@
         </tbody>
       </table>
     </div>
-
-    <!-- table 2 -->
-    <h3 class="title is-5" style="margin-top: 2rem;">
-      Detailed Parameters of 30 DRC Profiles
-    </h3>
-
-    <div class="table-container">
-      <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
-        <thead>
-          <tr>
-            <th>Profile</th>
-            <th>L(dB)</th>
-            <th>R</th>
-            <th>τ<sub>v</sub><sup>att</sup>(ms)</th>
-            <th>τ<sub>v</sub><sup>rel</sup>(ms)</th>
-            <th>τ<sub>g</sub><sup>att</sup>(ms)</th>
-            <th>τ<sub>g</sub><sup>rel</sup>(ms)</th>
-          </tr>
-        </thead>
-        <tbody>
-
-          <tr><td>1</td><td>-30.6</td><td>2.3</td><td>73.9</td><td>20.3</td><td>451.5</td><td>1153.6</td></tr>
-          <tr><td>2</td><td>-55.9</td><td>12.1</td><td>25.4</td><td>50.9</td><td>54.1</td><td>1274.5</td></tr>
-          <tr><td>3</td><td>-55.1</td><td>13.4</td><td>43.3</td><td>76.4</td><td>354.6</td><td>468.4</td></tr>
-          <tr><td>4</td><td>-39.6</td><td>13.1</td><td>66.2</td><td>10.1</td><td>325.5</td><td>1435.7</td></tr>
-          <tr><td>5</td><td>-31.4</td><td>12.3</td><td>99.4</td><td>91.7</td><td>160.7</td><td>790.8</td></tr>
-          <tr><td>6</td><td>-60.0</td><td>15.0</td><td>130.0</td><td>89.2</td><td>393.4</td><td>1758.2</td></tr>
-          <tr><td>7</td><td>-47.8</td><td>5.4</td><td>50.9</td><td>84.1</td><td>403.1</td><td>1677.6</td></tr>
-          <tr><td>8</td><td>-46.9</td><td>4.9</td><td>48.4</td><td>66.2</td><td>257.7</td><td>1516.3</td></tr>
-          <tr><td>9</td><td>-45.3</td><td>2.5</td><td>89.2</td><td>114.7</td><td>344.9</td><td>1234.2</td></tr>
-          <tr><td>10</td><td>-26.5</td><td>10.8</td><td>114.7</td><td>68.8</td><td>209.2</td><td>145.9</td></tr>
-          <tr><td>11</td><td>-43.7</td><td>8.4</td><td>35.6</td><td>107.0</td><td>432.1</td><td>750.5</td></tr>
-          <tr><td>12</td><td>-20.8</td><td>6.5</td><td>84.1</td><td>101.9</td><td>500.0</td><td>347.4</td></tr>
-          <tr><td>13</td><td>-22.4</td><td>11.3</td><td>124.9</td><td>63.7</td><td>364.3</td><td>831.1</td></tr>
-          <tr><td>14</td><td>-40.4</td><td>10.0</td><td>112.1</td><td>99.4</td><td>374.0</td><td>1355.1</td></tr>
-          <tr><td>15</td><td>-52.7</td><td>4.4</td><td>104.5</td><td>35.6</td><td>199.5</td><td>1919.4</td></tr>
-          <tr><td>16</td><td>-51.8</td><td>2.0</td><td>117.2</td><td>117.2</td><td>277.0</td><td>549.0</td></tr>
-          <tr><td>17</td><td>-38.0</td><td>5.2</td><td>5.0</td><td>40.7</td><td>296.4</td><td>1717.9</td></tr>
-          <tr><td>18</td><td>-51.0</td><td>3.3</td><td>28.0</td><td>127.4</td><td>170.4</td><td>669.9</td></tr>
-          <tr><td>19</td><td>-29.8</td><td>9.2</td><td>33.1</td><td>56.0</td><td>131.6</td><td>1959.7</td></tr>
-          <tr><td>20</td><td>-29.0</td><td>11.8</td><td>45.8</td><td>81.5</td><td>412.8</td><td>992.3</td></tr>
-          <tr><td>21</td><td>-28.2</td><td>5.7</td><td>10.1</td><td>17.8</td><td>34.7</td><td>428.1</td></tr>
-          <tr><td>22</td><td>-50.2</td><td>12.6</td><td>22.9</td><td>122.3</td><td>83.2</td><td>1395.4</td></tr>
-          <tr><td>23</td><td>-23.3</td><td>12.9</td><td>12.7</td><td>7.6</td><td>112.2</td><td>25.0</td></tr>
-          <tr><td>24</td><td>-44.5</td><td>7.8</td><td>15.2</td><td>86.6</td><td>306.1</td><td>1838.8</td></tr>
-          <tr><td>25</td><td>-46.1</td><td>11.0</td><td>122.3</td><td>12.7</td><td>189.8</td><td>1113.3</td></tr>
-          <tr><td>26</td><td>-56.7</td><td>2.8</td><td>94.3</td><td>28.0</td><td>102.6</td><td>186.2</td></tr>
-          <tr><td>27</td><td>-24.9</td><td>10.5</td><td>38.2</td><td>43.3</td><td>335.2</td><td>226.5</td></tr>
-          <tr><td>28</td><td>-48.6</td><td>8.9</td><td>107.0</td><td>104.5</td><td>25.0</td><td>1798.5</td></tr>
-          <tr><td>29</td><td>-49.4</td><td>10.2</td><td>127.4</td><td>71.3</td><td>92.9</td><td>508.7</td></tr>
-          <tr><td>30</td><td>-24.1</td><td>14.2</td><td>81.5</td><td>58.6</td><td>180.1</td><td>871.4</td></tr>
-
-        </tbody>
-      </table>
-    </div>
-
   </div>
 </section>
 <!-- End DRC profile table -->
+
+<!-- Parameter estimation results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">DRC Parameter Estimation Results</h2>
+
+    <div class="content">
+      <h3 class="title is-5">Profile Classification</h3>
+      <p>
+        We compare AST with DyMN for identifying a DRC profile from a predefined
+        library. AST achieves higher classification accuracy in every evaluated
+        dataset, profile-set size, and DRC mode.
+      </p>
+    </div>
+
+    <div class="table-container">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
+        <caption class="is-sr-only">DRC profile classification accuracy; higher is better</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Mode</th>
+            <th rowspan="2">Model</th>
+            <th colspan="4">6-profile datasets</th>
+            <th colspan="4">31-profile datasets</th>
+          </tr>
+          <tr>
+            <th>Med</th><th>Mus</th><th>DAFX</th><th>Libri</th>
+            <th>Med</th><th>Mus</th><th>DAFX</th><th>Libri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th rowspan="2">Compression</th><td><strong>AST</strong></td><td><strong>0.995</strong></td><td><strong>0.993</strong></td><td><strong>0.999</strong></td><td><strong>0.999</strong></td><td><strong>0.897</strong></td><td><strong>0.885</strong></td><td><strong>0.946</strong></td><td><strong>0.973</strong></td></tr>
+          <tr><td>DyMN</td><td>0.956</td><td>0.976</td><td>0.984</td><td>0.948</td><td>0.823</td><td>0.835</td><td>0.931</td><td>0.960</td></tr>
+          <tr><th rowspan="2">Expansion</th><td><strong>AST</strong></td><td><strong>0.991</strong></td><td><strong>0.987</strong></td><td><strong>0.998</strong></td><td><strong>0.999</strong></td><td><strong>0.894</strong></td><td><strong>0.881</strong></td><td><strong>0.942</strong></td><td><strong>0.970</strong></td></tr>
+          <tr><td>DyMN</td><td>0.951</td><td>0.963</td><td>0.979</td><td>0.993</td><td>0.819</td><td>0.827</td><td>0.915</td><td>0.956</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="has-text-centered is-size-7">Classification accuracy (↑). Best result in each condition is shown in bold.</p>
+
+    <div class="content" style="margin-top: 2.5rem;">
+      <h3 class="title is-5">Continuous Parameter Regression</h3>
+      <p>
+        We compare MEE with AST, TFE, and DyMN using the same normalized
+        six-parameter target. MEE obtains the lowest normalized parameter MSE in
+        every evaluated condition. Errors are generally larger for the
+        31-profile datasets and for expansion.
+      </p>
+    </div>
+
+    <div class="table-container">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
+        <caption class="is-sr-only">Normalized DRC parameter mean squared error; lower is better</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Mode</th>
+            <th rowspan="2">Model</th>
+            <th colspan="4">6-profile datasets</th>
+            <th colspan="4">31-profile datasets</th>
+          </tr>
+          <tr>
+            <th>Med</th><th>Mus</th><th>DAFX</th><th>Libri</th>
+            <th>Med</th><th>Mus</th><th>DAFX</th><th>Libri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th rowspan="4">Compression</th><td>AST</td><td>0.037</td><td>0.042</td><td>0.032</td><td>0.028</td><td>0.077</td><td>0.083</td><td>0.074</td><td>0.070</td></tr>
+          <tr><td><strong>MEE</strong></td><td><strong>0.007</strong></td><td><strong>0.010</strong></td><td><strong>0.006</strong></td><td><strong>0.003</strong></td><td><strong>0.031</strong></td><td><strong>0.039</strong></td><td><strong>0.025</strong></td><td><strong>0.012</strong></td></tr>
+          <tr><td>TFE</td><td>0.055</td><td>0.056</td><td>0.048</td><td>0.046</td><td>0.058</td><td>0.058</td><td>0.054</td><td>0.052</td></tr>
+          <tr><td>DyMN</td><td>0.021</td><td>0.044</td><td>0.011</td><td>0.023</td><td>0.042</td><td>0.073</td><td>0.031</td><td>0.039</td></tr>
+          <tr><th rowspan="4">Expansion</th><td>AST</td><td>0.044</td><td>0.040</td><td>0.033</td><td>0.028</td><td>0.080</td><td>0.078</td><td>0.075</td><td>0.071</td></tr>
+          <tr><td><strong>MEE</strong></td><td><strong>0.009</strong></td><td><strong>0.013</strong></td><td><strong>0.008</strong></td><td><strong>0.004</strong></td><td><strong>0.040</strong></td><td><strong>0.051</strong></td><td><strong>0.033</strong></td><td><strong>0.016</strong></td></tr>
+          <tr><td>TFE</td><td>0.072</td><td>0.073</td><td>0.063</td><td>0.060</td><td>0.075</td><td>0.076</td><td>0.070</td><td>0.068</td></tr>
+          <tr><td>DyMN</td><td>0.067</td><td>0.038</td><td>0.025</td><td>0.013</td><td>0.072</td><td>0.063</td><td>0.048</td><td>0.024</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="has-text-centered is-size-7">
+      Normalized parameter MSE \(\mathcal{L}^{\mathrm{MSE}}_{\hat{q},q}\) (↓).
+      Best result in each condition is shown in bold. TFE uses a 64 × 431 STFT input.
+    </p>
+  </div>
+</section>
+<!-- End parameter estimation results -->
 
 <!-- Resultes image carousel -->
 <section class="section">
@@ -453,7 +464,8 @@
         <img src="static/images/baseline_drc_large_1.png" alt="Compression inversion results on large datasets" loading="lazy">
       </figure>
       <p class="has-text-centered is-size-7">
-        <b>Figure 1.</b> Compression inversion results on the large datasets.
+        <strong>Compression inversion results.</strong> Box-plot comparison on the
+        6-profile and 31-profile datasets across four audio corpora and four metrics.
       </p>
 
       <!-- Figure 2 -->
@@ -461,7 +473,8 @@
         <img src="static/images/baseline_expand_large_1.png" alt="Expansion inversion results on large datasets" loading="lazy">
       </figure>
       <p class="has-text-centered is-size-7">
-        <b>Figure 2.</b> Expansion inversion results on the large datasets.
+        <strong>Expansion inversion results.</strong> Box-plot comparison on the
+        6-profile and 31-profile datasets across four audio corpora and four metrics.
       </p>
 
     </div>
@@ -470,15 +483,74 @@
 </section>
 <!-- End results image carousel -->
 
+<!-- DRC Illustration -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">DRC Illustration</h2>
+    <div class="content has-text-centered mb-5">
+      <p>
+        Waveform examples illustrate the forward DRC process and the subsequent
+        model-based reconstruction. Here, <i>x</i> is the original signal,
+        <i>y</i> is the compressed or expanded signal, and
+        <i>x&#770;</i> is the reconstructed signal.
+      </p>
+    </div>
+
+    <div class="columns is-variable is-5">
+      <div class="column">
+        <h3 class="title is-5 has-text-centered">Compression</h3>
+        <figure class="image box">
+          <img src="https://fourer.fr/drc/x_y_comp.png"
+            alt="Comparison of the original and compressed waveforms" loading="lazy">
+        </figure>
+        <p class="has-text-centered is-size-7 mb-5">
+          Original signal <i>x</i> and compressed signal <i>y</i>.
+        </p>
+
+        <figure class="image box">
+          <img src="https://fourer.fr/drc/x_x_hat_comp.png"
+            alt="Comparison of the original and reconstructed waveforms after compression" loading="lazy">
+        </figure>
+        <p class="has-text-centered is-size-7">
+          Original signal <i>x</i> and reconstruction <i>x&#770;</i> after compression inversion.
+        </p>
+      </div>
+
+      <div class="column">
+        <h3 class="title is-5 has-text-centered">Expansion</h3>
+        <figure class="image box">
+          <img src="https://fourer.fr/drc/x_y_exp.png"
+            alt="Comparison of the original and expanded waveforms" loading="lazy">
+        </figure>
+        <p class="has-text-centered is-size-7 mb-5">
+          Original signal <i>x</i> and expanded signal <i>y</i>.
+        </p>
+
+        <figure class="image box">
+          <img src="https://fourer.fr/drc/x_x_hat_exp.png"
+            alt="Comparison of the original and reconstructed waveforms after expansion" loading="lazy">
+        </figure>
+        <p class="has-text-centered is-size-7">
+          Original signal <i>x</i> and reconstruction <i>x&#770;</i> after expansion inversion.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End DRC Illustration -->
+
 <!-- Audio Hearing Examples -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Audio Hearing Examples</h2>
+    <h2 class="title is-3 has-text-centered">Listening Examples</h2>
 
     <div class="content mb-5">
       <p>
         We provide several audio examples to compare different inversion methods. 
         The original audio is a 5-second chunk extracted from the MedleyDB dataset.
+        The DRC parameter order is
+        \(q=[L,R,\tau_v^{\mathrm{att}},\tau_v^{\mathrm{rel}},
+        \tau_g^{\mathrm{att}},\tau_g^{\mathrm{rel}},p]\), with time constants in milliseconds.
       </p>
     </div>
     
@@ -724,8 +796,9 @@
 </section>
 <!-- End Audio Hearing Examples -->
 
+</main>
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
